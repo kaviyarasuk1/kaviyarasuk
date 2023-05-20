@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> Classification </title>
+    <link rel="stylesheet" href="/Static/Css/classify.css">
+    <link rel="stylesheet" type="text/css" href="E:\Breast Cancer\Static\Css\classify.css">
+
+</head>
+<body>
+    <header>
+        
+        <nav>
+            <div class="logo"> IBM Team ID : NM2023TMID05250</div>
+            <ul class="menu">
+                <li><a href="file:///E:/Breast%20Cancer/Templates/index.html">Home</a></li>
+                <li><a href="#">Classify</a></li>
+                <li><a href="file:///E:/Breast%20Cancer/Templates/team.html">Team</a></li>
+                <li><a href="file:///E:/Breast%20Cancer/Templates/about.html">About</a></li>
+            </ul>
+        </nav>
+        
+    </header>
+
+    <main class="form"> 
+
+        <div class="web-title">
+            <h2> cancerVision:Advanced Breast Cancer prediction with Deep learning </h2>
+            <p> Select an cancer image for Classification</p>
+        </div>
+
+        <form id="predict-form" method="POST" action="/predict" enctype="multipart/form-data">
+            <label for="image-file">Insert Your Image</Select></label>
+            <input type="file" id="file" name="file" accept=".jpg, .jpeg, .png">
+            <br><br>
+            <input type="submit" value="Classify Cancer">
+        </form>
+        <div id="result"></div>
+    </main>
+
+    <footer>
+        <script src="E:\Breast Cancer\Static\Javascript\script.js"></script>
+    </footer>
+</body>
+</html>
